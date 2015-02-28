@@ -7,8 +7,8 @@ description: "It's a rhythm game still in development. It will be available to W
 # Your name. Will show in your footer + sidebar 
 author: "Pedro Cardoso da Silva"
 
-url: "http://forsureitsme.github.io/HallyuWorldWave/"
-baseurl: ""
+url: "http://forsureitsme.github.io/"
+baseurl: "HallyuWorldWave/"
 
 # Social Accounts (mine, as placeholders)
 
