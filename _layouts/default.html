@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+      <title>{{ site.name }}</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta http-equiv="content-language" content="en-gb" />
+      <meta name="description" content="{{ site.description }}">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="{{ site.baseurl| split: '/' | join:'/' }}/css/main.css" />
+      <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="off-canvas">
+      <!-- <figure class="avatar">
+        <img src="{{ site.baseurl }}/assets/img/avatar.jpg" alt="Picture" title="That's me, {{ site.author }}.">
+      </figure> -->
+      <div class="bio">
+        <h5>{{ site.name }}</h5>
+        <center>
+          한류 세계 파<br>
+          <small>
+            (Please, tell me the above is Hallyu World Wave in Hangul)
+          </small>
+        </center>
+        <hr>
+        <p>
+            It's a rythm game still in development. It will be available to Windows, Mac OS and Linux.<br>
+          It's based in the worldwide famous game <a href="https://www.youtube.com/watch?v=FG6ySTlUrHk" target="_blank">Pump It Up</a>, but it'll only have songs from the korean wave.
+        </p>
+        <p>
+          This game needs a lot of <small><s>work</s></small> love. It's looking for:
+          </p><ul>
+            <li>A interface designer. A true one...</li>
+            <li>LUA developers (preferably with knowledge about Stepmania engine)</li>
+            <li>Players to test the whole thing, and give reviews about the whole game</li>
+            <li>Translator for whichever language the community ask for/you're willing to do</li>
+            <li>A fanbase, eh</li>
+            <li>
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="D8WJCKMBJEJY4">
+                <input type="submit" class="link" value="Donations" name="submit" alt="Donations">, so we can get more coffee, Red Bulls and anti-headache pills
+              </form>
+            </li>
+          </ul>
+        <p></p>
+        <p>
+          Be aware that it's not going to have any earlier release of unfinished stuff. I'm not EA.<br>
+          <br>
+          Please, understand.
+        </p>
+      </div>
+      <nav>
+        <h6>Instant updates on</h6>
+        <ul>
+          {% if site.twitter %}
+          <li><a target="_blank" href="http://twitter.com/{{ site.twitter }}">Twitter</a></li>
+          {% endif %}
+          {% if site.github %}
+          <li><a target="_blank" href="http://github.com/{{ site.github }}">Github</a></li>
+          {% endif %}
+          {% if site.dribbble %}
+          <li><a target="_blank" href="{{ site.dribbble }}">Dribbble</a></li>
+          {% endif %}
+          {% if site.instagram %}
+          <li><a target="_blank" href="{{ site.instagram }}">Instagram</a></li>
+          {% endif %}
+        </ul>
+      </nav>
+    </div>
+
+
+    <div class="site-wrapper">
+
+      <header>
+        <div class="h-wrap">
+          <h1 class="title"><a href="{{ site.baseurl | split:'/' | join:'/' | append:'/'  }}" title="Back to Homepage">{{ site.name }}</a></h1>
+          <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
+        </div>
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+
+      <footer>
+        &copy; {{ site.author }}</small>
+      </footer>
+
+    </div> 
+    {% comment %} site-wrapper {% endcomment %}
+
+    <script src="{{ site.baseurl }}/js/main.js"></script>
+    {% comment %} Google Analytics {% endcomment %}
+    {% if site.ga_tracking_id and site.ga_domain %}
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', '{{ site.ga_tracking_id }}', '{{ site.ga_domain }}');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
+
+  </body>
+</html>

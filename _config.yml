@@ -1,0 +1,41 @@
+# Title of your blog; shows in the header
+name: "Hallyu World Wave"
+
+# Description of your content (will only be used on Google Search)
+description: "It's a rhythm game still in development. It will be available to Windows, Mac OS and Linux. It's based in the worldwide famous game Pump It Up, but it'll only have songs from the korean wave."
+
+# Your name. Will show in your footer + sidebar 
+author: "Pedro Cardoso da Silva"
+
+url: "http://forsureitsme.github.io/HallyuWorldWave/"
+baseurl: ""
+
+# Social Accounts (mine, as placeholders)
+
+twitter: HallyuWorldWave
+github: forsureitsme/HallyuWorldWave/tree/master
+
+# Google Analytics (you may want to changes these with yours or even delete :)
+
+ga_domain: forsureitsme.github.io
+ga_tracking_id: UA-60227438-1
+
+# Other (refer to http://jekyllrb.com/docs/home/ for further details on the below)
+
+markdown: kramdown
+permalink: pretty
+highlighter: pygments
+timezone: America/Sao_Paulo
+encoding: utf-8
+
+paginate: 10
+paginate_path: "/page/:num"
+
+# SCSS
+
+sass:
+  sass_dir: _scss
+  style: :compressed
+
+# Post assets
+post_assets_dir: "/assets/posts"
