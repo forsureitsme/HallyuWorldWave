@@ -8,7 +8,7 @@ description: "It's a rhythm game still in development. It will be available to W
 author: "Pedro Cardoso da Silva"
 
 url: "http://forsureitsme.github.io/"
-baseurl: "HallyuWorldWave/"
+baseurl: "/HallyuWorldWave/"
 
 # Social Accounts (mine, as placeholders)
 
