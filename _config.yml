@@ -37,5 +37,5 @@ sass:
   sass_dir: _scss
   style: :compressed
 
-# Post assets
-post_assets_dir: "/assets/posts"
+# Post content
+content_dir: "/assets/posts"
