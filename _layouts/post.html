@@ -16,8 +16,16 @@ layout: default
       {{ content }}
     </div>
     <div class="feat share">
-      <a href="http://twitter.com/share" class="popup">
-        <span class="icon-twitter"></span>
+      <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&text={{ post.title }}&via={{ site.twitter }}" target="_blank" class="popup">
+        <span class="fa-icon fa-twitter"></span>
+      </a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" class="popup">
+        <span class="fa-icon fa-facebook"></span>
+        <!-- <span class="icon-facebook"></span> -->
+      </a>
+      <a href="https://plus.google.com/share?url={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" class="popup">
+        <span class="fa-icon fa-google-plus"></span>
+        <!-- <span class="icon-google-plu"></span> -->
       </a>
     </div>
     <!-- {% if page.next %}

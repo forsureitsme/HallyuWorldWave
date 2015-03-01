@@ -90,3 +90,21 @@ a {
     color: $text-color;
   }
 }
+
+@font-face {
+    font-family: 'Jeju Gothic';
+    src: url('../assets/fonts/JejuGothic.eot');
+    src: url('../assets/fonts/JejuGothic.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/JejuGothic.woff2') format('woff2'),
+         url('../assets/fonts/JejuGothic.woff') format('woff'),
+         url('../assets/fonts/JejuGothic.ttf') format('truetype'),
+         url('../assets/fonts/JejuGothic.svg#jejugothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.fa-icon
+{
+  font-family: 'FontAwesome';
+}
